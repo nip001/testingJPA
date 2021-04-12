@@ -5,8 +5,9 @@ import java.util.List;
 import com.kuliah.main.entity.Soal;
 
 public interface ModelSoalInterface {
-	
+
 	public List<Soal> getAllSoal();
+	public List<Soal> getAllSoalNull();
 	public Soal getSoalByName(String name);
 	
 	public Soal addSoal(Soal Soal);

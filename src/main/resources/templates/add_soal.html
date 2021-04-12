@@ -25,17 +25,16 @@
 </div>
 
 <div class="mb-3">
-
-<select id="multiSelectElementsSelected"
-            name="multiSelectElementsSelected"
-            multiple="multiple"
-            th:field="*{lstPertanyaan}">
-
-        <option th:each="pertanyaan,row : ${listPertanyaan}"
+  <label >List Pertanyaan </label>
+  <br/>
+  <input th:field="*{lstPertanyaan}" type="checkbox" 
+				th:each="pertanyaan,row : ${listPertanyaan}"
                 th:value="${pertanyaan.id}"
-                th:text="${pertanyaan.pertanyaan1}"></option>
-</select>
-<div class="mb-3">
+                th:text="${pertanyaan.pertanyaan1}"/>
+                
+  <br/>
+</div>
+
 <input type="hidden" th:field="*{id}">
 
  <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" />

@@ -13,7 +13,7 @@ public interface ModelPertanyaanInterface {
 	public Pertanyaan addPertanyaan(Pertanyaan mahasiswa);
 	
 	public void deletePertanyaan(String id);
-	
+
 	public Pertanyaan cariPertanyaan(String id);
 
 }

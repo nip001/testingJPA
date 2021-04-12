@@ -55,4 +55,14 @@ public class ModelSoal  implements ModelSoalInterface{
 		return this.SoalRepo.findByNamaSoal(name);
 	}
 
+
+
+	@Override
+	public List<Soal> getAllSoalNull() {
+		// TODO Auto-generated method stub
+		return  this.SoalRepo.findAllNull();
+	}
+
+
+
 }
